@@ -7,23 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */; };
 		52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391D28B0FD8F009846BA /* AppDelegate.swift */; };
 		52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391F28B0FD8F009846BA /* SceneDelegate.swift */; };
-		52AF392228B0FD8F009846BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF392128B0FD8F009846BA /* ViewController.swift */; };
-		52AF392528B0FD8F009846BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392328B0FD8F009846BA /* Main.storyboard */; };
 		52AF392728B0FD90009846BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392628B0FD90009846BA /* Assets.xcassets */; };
 		52AF392A28B0FD90009846BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392828B0FD90009846BA /* LaunchScreen.storyboard */; };
+		52AF393728B103CD009846BA /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF393628B103CD009846BA /* ScheduleVC.swift */; };
+		52AF393928B103FA009846BA /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF393828B103FA009846BA /* TasksVC.swift */; };
+		52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF393A28B1040B009846BA /* ContactsVC.swift */; };
+		52AF394728B123D8009846BA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394228B123D7009846BA /* TabBarController.swift */; };
+		52AF394828B123D8009846BA /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394328B123D7009846BA /* NavBarController.swift */; };
+		52AF394928B123D8009846BA /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394428B123D7009846BA /* BaseView.swift */; };
+		52AF394A28B123D8009846BA /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394528B123D8009846BA /* BaseController.swift */; };
+		52AF395128B1243C009846BA /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF395028B1243C009846BA /* UIView + Ext.swift */; };
+		52AF395228B1243C009846BA /* Date + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394F28B1243C009846BA /* Date + Ext.swift */; };
+		52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394E28B1243C009846BA /* UIColor+Ext.swift */; };
+		52AF395528B1243F009846BA /* Resorces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF395428B1243F009846BA /* Resorces.swift */; };
+		52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF396828B27E51009846BA /* ScheduleTVC.swift */; };
+		CF6BDF7A7D17301926B9FB3B /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
 		52AF391A28B0FD8F009846BA /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF391D28B0FD8F009846BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AF391F28B0FD8F009846BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52AF392128B0FD8F009846BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52AF392428B0FD8F009846BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52AF392628B0FD90009846BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52AF392928B0FD90009846BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52AF392B28B0FD90009846BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AF393628B103CD009846BA /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		52AF393828B103FA009846BA /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
+		52AF393A28B1040B009846BA /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		52AF394228B123D7009846BA /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		52AF394328B123D7009846BA /* NavBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		52AF394428B123D7009846BA /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		52AF394528B123D8009846BA /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		52AF394E28B1243C009846BA /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		52AF394F28B1243C009846BA /* Date + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Ext.swift"; sourceTree = "<group>"; };
+		52AF395028B1243C009846BA /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		52AF395428B1243F009846BA /* Resorces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resorces.swift; sourceTree = "<group>"; };
+		52AF396828B27E51009846BA /* ScheduleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTVC.swift; sourceTree = "<group>"; };
+		908158F2E370D4BB195448F7 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
+		B72BE24E83164EBA11348DCE /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
+		E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +57,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF6BDF7A7D17301926B9FB3B /* Pods_MySchedule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36829AABEC62CCD24EAC6CD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52AF391128B0FD8F009846BA = {
 			isa = PBXGroup;
 			children = (
 				52AF391C28B0FD8F009846BA /* MySchedule */,
 				52AF391B28B0FD8F009846BA /* Products */,
+				DD9075027415BD924972A775 /* Pods */,
+				36829AABEC62CCD24EAC6CD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +93,115 @@
 		52AF391C28B0FD8F009846BA /* MySchedule */ = {
 			isa = PBXGroup;
 			children = (
+				52AF393328B0FF08009846BA /* Application */,
+				52AF393428B0FF1F009846BA /* Controller */,
+				52AF395628B12AB9009846BA /* Helpers */,
+				52AF393528B0FF97009846BA /* Resorces */,
+			);
+			path = MySchedule;
+			sourceTree = "<group>";
+		};
+		52AF393328B0FF08009846BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				52AF391D28B0FD8F009846BA /* AppDelegate.swift */,
 				52AF391F28B0FD8F009846BA /* SceneDelegate.swift */,
-				52AF392128B0FD8F009846BA /* ViewController.swift */,
-				52AF392328B0FD8F009846BA /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		52AF393428B0FF1F009846BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52AF394128B123C3009846BA /* Base */,
+				52AF395D28B1E4C2009846BA /* ScheduleVC */,
+				52AF396528B1E8FE009846BA /* TasksVC */,
+				52AF396628B1E90F009846BA /* ContactsVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52AF393528B0FF97009846BA /* Resorces */ = {
+			isa = PBXGroup;
+			children = (
 				52AF392628B0FD90009846BA /* Assets.xcassets */,
 				52AF392828B0FD90009846BA /* LaunchScreen.storyboard */,
 				52AF392B28B0FD90009846BA /* Info.plist */,
 			);
-			path = MySchedule;
+			path = Resorces;
+			sourceTree = "<group>";
+		};
+		52AF394128B123C3009846BA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52AF394528B123D8009846BA /* BaseController.swift */,
+				52AF394428B123D7009846BA /* BaseView.swift */,
+				52AF394328B123D7009846BA /* NavBarController.swift */,
+				52AF394228B123D7009846BA /* TabBarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52AF395628B12AB9009846BA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				52AF395428B1243F009846BA /* Resorces.swift */,
+				52AF395728B12AC8009846BA /* Extension */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		52AF395728B12AC8009846BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				52AF394F28B1243C009846BA /* Date + Ext.swift */,
+				52AF394E28B1243C009846BA /* UIColor+Ext.swift */,
+				52AF395028B1243C009846BA /* UIView + Ext.swift */,
+				521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		52AF395D28B1E4C2009846BA /* ScheduleVC */ = {
+			isa = PBXGroup;
+			children = (
+				52AF396728B27E2B009846BA /* Views */,
+				52AF393628B103CD009846BA /* ScheduleVC.swift */,
+			);
+			path = ScheduleVC;
+			sourceTree = "<group>";
+		};
+		52AF396528B1E8FE009846BA /* TasksVC */ = {
+			isa = PBXGroup;
+			children = (
+				52AF393828B103FA009846BA /* TasksVC.swift */,
+			);
+			path = TasksVC;
+			sourceTree = "<group>";
+		};
+		52AF396628B1E90F009846BA /* ContactsVC */ = {
+			isa = PBXGroup;
+			children = (
+				52AF393A28B1040B009846BA /* ContactsVC.swift */,
+			);
+			path = ContactsVC;
+			sourceTree = "<group>";
+		};
+		52AF396728B27E2B009846BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52AF396828B27E51009846BA /* ScheduleTVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD9075027415BD924972A775 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				908158F2E370D4BB195448F7 /* Pods-MySchedule.debug.xcconfig */,
+				B72BE24E83164EBA11348DCE /* Pods-MySchedule.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52AF392E28B0FD90009846BA /* Build configuration list for PBXNativeTarget "MySchedule" */;
 			buildPhases = (
+				8948AEBFC16E0936C1D5CED3 /* [CP] Check Pods Manifest.lock */,
 				52AF391628B0FD8F009846BA /* Sources */,
 				52AF391728B0FD8F009846BA /* Frameworks */,
 				52AF391828B0FD8F009846BA /* Resources */,
+				7572553AE229E6D4A0F560C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +266,79 @@
 			files = (
 				52AF392A28B0FD90009846BA /* LaunchScreen.storyboard in Resources */,
 				52AF392728B0FD90009846BA /* Assets.xcassets in Resources */,
-				52AF392528B0FD8F009846BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7572553AE229E6D4A0F560C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySchedule/Pods-MySchedule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8948AEBFC16E0936C1D5CED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySchedule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52AF391628B0FD8F009846BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52AF392228B0FD8F009846BA /* ViewController.swift in Sources */,
+				52AF393728B103CD009846BA /* ScheduleVC.swift in Sources */,
+				52AF395128B1243C009846BA /* UIView + Ext.swift in Sources */,
+				521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */,
+				52AF395528B1243F009846BA /* Resorces.swift in Sources */,
+				52AF394A28B123D8009846BA /* BaseController.swift in Sources */,
+				52AF395228B1243C009846BA /* Date + Ext.swift in Sources */,
+				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
+				52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */,
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
+				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
+				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
+				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
+				52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */,
+				52AF394928B123D8009846BA /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52AF392328B0FD8F009846BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52AF392428B0FD8F009846BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52AF392828B0FD90009846BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +468,7 @@
 		};
 		52AF392F28B0FD90009846BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908158F2E370D4BB195448F7 /* Pods-MySchedule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,12 +476,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 553DP5SJ57;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MySchedule/Info.plist;
+				INFOPLIST_FILE = MySchedule/Resorces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +497,7 @@
 		};
 		52AF393028B0FD90009846BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72BE24E83164EBA11348DCE /* Pods-MySchedule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,12 +505,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 553DP5SJ57;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MySchedule/Info.plist;
+				INFOPLIST_FILE = MySchedule/Resorces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
