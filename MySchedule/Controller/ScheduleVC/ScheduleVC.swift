@@ -82,6 +82,11 @@ class ScheduleVC: BaseController {
             break
         }
     }
+    
+    @objc private func addButtonTap() {
+        let optionScheduleVC = OptionScheduleVC()
+        navigationController?.pushViewController(optionScheduleVC, animated: true)
+    }
 }
 
 extension ScheduleVC {
@@ -131,6 +136,8 @@ extension ScheduleVC {
     
     override func configure() {
         super.configure()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         
         title = R.Strings.NavBar.overView
         navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .overview)

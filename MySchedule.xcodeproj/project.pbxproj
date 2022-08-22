@@ -11,6 +11,8 @@
 		521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */; };
 		521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F9228B35B86006CFF61 /* TasksTVC.swift */; };
 		52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */; };
+		52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */; };
+		52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A728B38BF10006B7BA /* OptionTVC.swift */; };
 		52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391D28B0FD8F009846BA /* AppDelegate.swift */; };
 		52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391F28B0FD8F009846BA /* SceneDelegate.swift */; };
 		52AF392728B0FD90009846BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392628B0FD90009846BA /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
 		521A4F9228B35B86006CFF61 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
 		52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocol.swift; sourceTree = "<group>"; };
+		52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionScheduleVC.swift; sourceTree = "<group>"; };
+		52AB25A728B38BF10006B7BA /* OptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTVC.swift; sourceTree = "<group>"; };
 		52AF391A28B0FD8F009846BA /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF391D28B0FD8F009846BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AF391F28B0FD8F009846BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				52AF396728B27E2B009846BA /* Views */,
 				52AF393628B103CD009846BA /* ScheduleVC.swift */,
+				52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */,
 			);
 			path = ScheduleVC;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				52AF396828B27E51009846BA /* ScheduleTVC.swift */,
+				52AB25A728B38BF10006B7BA /* OptionTVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,8 +358,10 @@
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
 				52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */,
 				521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */,
+				52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */,
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
 				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
+				52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */,
 				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
 				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
