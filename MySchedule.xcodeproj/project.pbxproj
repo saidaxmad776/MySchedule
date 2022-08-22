@@ -10,9 +10,13 @@
 		521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */; };
 		521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */; };
 		521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F9228B35B86006CFF61 /* TasksTVC.swift */; };
+		529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230628B3F37200AC95A9 /* AlertTime.swift */; };
+		529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230828B3F54800AC95A9 /* AlertForCellName.swift */; };
 		52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */; };
 		52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */; };
 		52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A728B38BF10006B7BA /* OptionTVC.swift */; };
+		52AB25AA28B3A3640006B7BA /* OptionHTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A928B3A3640006B7BA /* OptionHTC.swift */; };
+		52AB25AD28B3C0E90006B7BA /* AlertDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25AC28B3C0E90006B7BA /* AlertDate.swift */; };
 		52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391D28B0FD8F009846BA /* AppDelegate.swift */; };
 		52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391F28B0FD8F009846BA /* SceneDelegate.swift */; };
 		52AF392728B0FD90009846BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392628B0FD90009846BA /* Assets.xcassets */; };
@@ -36,9 +40,13 @@
 		521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
 		521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
 		521A4F9228B35B86006CFF61 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
+		529D230628B3F37200AC95A9 /* AlertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
+		529D230828B3F54800AC95A9 /* AlertForCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
 		52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocol.swift; sourceTree = "<group>"; };
 		52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionScheduleVC.swift; sourceTree = "<group>"; };
 		52AB25A728B38BF10006B7BA /* OptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTVC.swift; sourceTree = "<group>"; };
+		52AB25A928B3A3640006B7BA /* OptionHTC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionHTC.swift; sourceTree = "<group>"; };
+		52AB25AC28B3C0E90006B7BA /* AlertDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDate.swift; sourceTree = "<group>"; };
 		52AF391A28B0FD8F009846BA /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF391D28B0FD8F009846BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AF391F28B0FD8F009846BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +106,16 @@
 			path = Protocolls;
 			sourceTree = "<group>";
 		};
+		52AB25AB28B3C0C70006B7BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52AB25AC28B3C0E90006B7BA /* AlertDate.swift */,
+				529D230628B3F37200AC95A9 /* AlertTime.swift */,
+				529D230828B3F54800AC95A9 /* AlertForCellName.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		52AF391128B0FD8F009846BA = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +141,7 @@
 				52AF393428B0FF1F009846BA /* Controller */,
 				521A4F9428B363E9006CFF61 /* Protocolls */,
 				52AF395628B12AB9009846BA /* Helpers */,
+				52AB25AB28B3C0C70006B7BA /* View */,
 				52AF393528B0FF97009846BA /* Resorces */,
 			);
 			path = MySchedule;
@@ -222,6 +241,7 @@
 			children = (
 				52AF396828B27E51009846BA /* ScheduleTVC.swift */,
 				52AB25A728B38BF10006B7BA /* OptionTVC.swift */,
+				52AB25A928B3A3640006B7BA /* OptionHTC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -351,8 +371,10 @@
 			files = (
 				52AF393728B103CD009846BA /* ScheduleVC.swift in Sources */,
 				52AF395128B1243C009846BA /* UIView + Ext.swift in Sources */,
+				52AB25AA28B3A3640006B7BA /* OptionHTC.swift in Sources */,
 				521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */,
 				52AF395528B1243F009846BA /* Resorces.swift in Sources */,
+				529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */,
 				52AF394A28B123D8009846BA /* BaseController.swift in Sources */,
 				52AF395228B1243C009846BA /* Date + Ext.swift in Sources */,
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
@@ -360,9 +382,11 @@
 				521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */,
 				52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */,
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
+				52AB25AD28B3C0E90006B7BA /* AlertDate.swift in Sources */,
 				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
 				52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */,
 				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
+				529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */,
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
 				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
