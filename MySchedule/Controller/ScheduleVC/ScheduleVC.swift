@@ -35,6 +35,10 @@ class ScheduleVC: BaseController {
     
     private let tableView: UITableView = {
         let tableView = UITableView()
+        tableView.bounces = false
+        tableView.showsVerticalScrollIndicator = false
+        tableView.separatorInset = .zero
+        tableView.separatorColor = .red
         return tableView
     }()
     
@@ -153,11 +157,12 @@ extension ScheduleVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idScheduleCell, for: indexPath) as! ScheduleTVC
-//        switch indexPath.row {
-//        case 0: cell.backgroundColor = .red
-//        case 1: cell.backgroundColor = .blue
-//        default: cell.backgroundColor = .green
-//        }
+        cell.selectionStyle = .none
+        switch indexPath.row {
+        case 0: cell.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
+        case 1: cell.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        default: cell.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        }
         return cell
     }
     

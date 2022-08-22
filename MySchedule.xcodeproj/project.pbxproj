@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */; };
+		521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */; };
+		521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F9228B35B86006CFF61 /* TasksTVC.swift */; };
 		52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391D28B0FD8F009846BA /* AppDelegate.swift */; };
 		52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391F28B0FD8F009846BA /* SceneDelegate.swift */; };
 		52AF392728B0FD90009846BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392628B0FD90009846BA /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
+		521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
+		521A4F9228B35B86006CFF61 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
 		52AF391A28B0FD8F009846BA /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF391D28B0FD8F009846BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AF391F28B0FD8F009846BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		521A4F9128B35B6A006CFF61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				521A4F9228B35B86006CFF61 /* TasksTVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		521A4F9428B363E9006CFF61 /* Protocolls */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocolls;
+			sourceTree = "<group>";
+		};
 		52AF391128B0FD8F009846BA = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 			children = (
 				52AF393328B0FF08009846BA /* Application */,
 				52AF393428B0FF1F009846BA /* Controller */,
+				521A4F9428B363E9006CFF61 /* Protocolls */,
 				52AF395628B12AB9009846BA /* Helpers */,
 				52AF393528B0FF97009846BA /* Resorces */,
 			);
@@ -158,6 +178,7 @@
 				52AF394E28B1243C009846BA /* UIColor+Ext.swift */,
 				52AF395028B1243C009846BA /* UIView + Ext.swift */,
 				521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */,
+				521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -174,6 +195,7 @@
 		52AF396528B1E8FE009846BA /* TasksVC */ = {
 			isa = PBXGroup;
 			children = (
+				521A4F9128B35B6A006CFF61 /* Views */,
 				52AF393828B103FA009846BA /* TasksVC.swift */,
 			);
 			path = TasksVC;
@@ -326,10 +348,12 @@
 				52AF395228B1243C009846BA /* Date + Ext.swift in Sources */,
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
 				52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */,
+				521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */,
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
 				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
 				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
+				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
 				52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */,
 				52AF394928B123D8009846BA /* BaseView.swift in Sources */,
