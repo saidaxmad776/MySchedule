@@ -10,6 +10,7 @@
 		521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */; };
 		521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */; };
 		521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F9228B35B86006CFF61 /* TasksTVC.swift */; };
+		52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */; };
 		52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391D28B0FD8F009846BA /* AppDelegate.swift */; };
 		52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF391F28B0FD8F009846BA /* SceneDelegate.swift */; };
 		52AF392728B0FD90009846BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AF392628B0FD90009846BA /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
 		521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
 		521A4F9228B35B86006CFF61 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
+		52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocol.swift; sourceTree = "<group>"; };
 		52AF391A28B0FD8F009846BA /* MySchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF391D28B0FD8F009846BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AF391F28B0FD8F009846BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 		521A4F9428B363E9006CFF61 /* Protocolls */ = {
 			isa = PBXGroup;
 			children = (
+				52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */,
 			);
 			path = Protocolls;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
 				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
+				52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */,
 				52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */,
 				52AF394928B123D8009846BA /* BaseView.swift in Sources */,
 			);

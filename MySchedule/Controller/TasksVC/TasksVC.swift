@@ -159,6 +159,8 @@ extension TasksVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: idTasksCell, for: indexPath) as! TasksTVC
         cell.selectionStyle = .none
         
+        cell.cellTaskDelegate = self
+        cell.index = indexPath
         return cell
     }
     
@@ -166,4 +168,10 @@ extension TasksVC: UITableViewDataSource, UITableViewDelegate {
         return 80
     }
   
+}
+
+extension TasksVC: PressButtonProtocol {
+    func readyButtonTap(indexPath: IndexPath) {
+        print("tap")
+    }
 }

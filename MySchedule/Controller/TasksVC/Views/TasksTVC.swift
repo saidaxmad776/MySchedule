@@ -24,6 +24,9 @@ class TasksTVC: UITableViewCell {
         return button
     }()
     
+    weak var cellTaskDelegate: PressButtonProtocol?
+    var index: IndexPath?
+    
     private var stackViewLabel = UIStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -39,7 +42,9 @@ class TasksTVC: UITableViewCell {
     }
     
     @objc private func readyButtonTap() {
-        
+        guard let index = index else { return }
+
+        cellTaskDelegate?.readyButtonTap(indexPath: index)
     }
     
     private func setupView() {
