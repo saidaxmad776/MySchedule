@@ -10,8 +10,14 @@
 		521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */; };
 		521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */; };
 		521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A4F9228B35B86006CFF61 /* TasksTVC.swift */; };
+		52435BAC28B47CA70071D241 /* UIAlertControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52435BAB28B47CA70071D241 /* UIAlertControllerError.swift */; };
+		52435BAE28B4852C0071D241 /* ColorTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52435BAD28B4852C0071D241 /* ColorTVC.swift */; };
+		52435BB028B494410071D241 /* TasksOptionTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52435BAF28B494410071D241 /* TasksOptionTBV.swift */; };
+		52435BB428B4A13C0071D241 /* ColorTasksTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52435BB328B4A13C0071D241 /* ColorTasksTBV.swift */; };
 		529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230628B3F37200AC95A9 /* AlertTime.swift */; };
 		529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230828B3F54800AC95A9 /* AlertForCellName.swift */; };
+		529D230E28B4785800AC95A9 /* ScheduleColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230D28B4785800AC95A9 /* ScheduleColorVC.swift */; };
+		529D231028B4786C00AC95A9 /* TeacherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230F28B4786C00AC95A9 /* TeacherVC.swift */; };
 		52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */; };
 		52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */; };
 		52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A728B38BF10006B7BA /* OptionTVC.swift */; };
@@ -40,8 +46,14 @@
 		521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Ext.swift"; sourceTree = "<group>"; };
 		521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
 		521A4F9228B35B86006CFF61 /* TasksTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTVC.swift; sourceTree = "<group>"; };
+		52435BAB28B47CA70071D241 /* UIAlertControllerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerError.swift; sourceTree = "<group>"; };
+		52435BAD28B4852C0071D241 /* ColorTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTVC.swift; sourceTree = "<group>"; };
+		52435BAF28B494410071D241 /* TasksOptionTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksOptionTBV.swift; sourceTree = "<group>"; };
+		52435BB328B4A13C0071D241 /* ColorTasksTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTasksTBV.swift; sourceTree = "<group>"; };
 		529D230628B3F37200AC95A9 /* AlertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
 		529D230828B3F54800AC95A9 /* AlertForCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
+		529D230D28B4785800AC95A9 /* ScheduleColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleColorVC.swift; sourceTree = "<group>"; };
+		529D230F28B4786C00AC95A9 /* TeacherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherVC.swift; sourceTree = "<group>"; };
 		52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocol.swift; sourceTree = "<group>"; };
 		52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionScheduleVC.swift; sourceTree = "<group>"; };
 		52AB25A728B38BF10006B7BA /* OptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTVC.swift; sourceTree = "<group>"; };
@@ -106,9 +118,20 @@
 			path = Protocolls;
 			sourceTree = "<group>";
 		};
+		52435BB528B4C68D0071D241 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				52AB25A728B38BF10006B7BA /* OptionTVC.swift */,
+				52AB25A928B3A3640006B7BA /* OptionHTC.swift */,
+				52435BAD28B4852C0071D241 /* ColorTVC.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		52AB25AB28B3C0C70006B7BA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52435BB528B4C68D0071D241 /* Cells */,
 				52AB25AC28B3C0E90006B7BA /* AlertDate.swift */,
 				529D230628B3F37200AC95A9 /* AlertTime.swift */,
 				529D230828B3F54800AC95A9 /* AlertForCellName.swift */,
@@ -205,6 +228,7 @@
 				52AF395028B1243C009846BA /* UIView + Ext.swift */,
 				521A4F8D28B2A019006CFF61 /* UIStackView + Ext.swift */,
 				521A4F8F28B3520E006CFF61 /* UILabel + Ext.swift */,
+				52435BAB28B47CA70071D241 /* UIAlertControllerError.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -215,6 +239,7 @@
 				52AF396728B27E2B009846BA /* Views */,
 				52AF393628B103CD009846BA /* ScheduleVC.swift */,
 				52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */,
+				529D230D28B4785800AC95A9 /* ScheduleColorVC.swift */,
 			);
 			path = ScheduleVC;
 			sourceTree = "<group>";
@@ -224,6 +249,8 @@
 			children = (
 				521A4F9128B35B6A006CFF61 /* Views */,
 				52AF393828B103FA009846BA /* TasksVC.swift */,
+				52435BAF28B494410071D241 /* TasksOptionTBV.swift */,
+				52435BB328B4A13C0071D241 /* ColorTasksTBV.swift */,
 			);
 			path = TasksVC;
 			sourceTree = "<group>";
@@ -231,6 +258,7 @@
 		52AF396628B1E90F009846BA /* ContactsVC */ = {
 			isa = PBXGroup;
 			children = (
+				529D230F28B4786C00AC95A9 /* TeacherVC.swift */,
 				52AF393A28B1040B009846BA /* ContactsVC.swift */,
 			);
 			path = ContactsVC;
@@ -240,8 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				52AF396828B27E51009846BA /* ScheduleTVC.swift */,
-				52AB25A728B38BF10006B7BA /* OptionTVC.swift */,
-				52AB25A928B3A3640006B7BA /* OptionHTC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,11 +398,14 @@
 				52AF393728B103CD009846BA /* ScheduleVC.swift in Sources */,
 				52AF395128B1243C009846BA /* UIView + Ext.swift in Sources */,
 				52AB25AA28B3A3640006B7BA /* OptionHTC.swift in Sources */,
+				529D231028B4786C00AC95A9 /* TeacherVC.swift in Sources */,
 				521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */,
 				52AF395528B1243F009846BA /* Resorces.swift in Sources */,
 				529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */,
 				52AF394A28B123D8009846BA /* BaseController.swift in Sources */,
 				52AF395228B1243C009846BA /* Date + Ext.swift in Sources */,
+				529D230E28B4785800AC95A9 /* ScheduleColorVC.swift in Sources */,
+				52435BB428B4A13C0071D241 /* ColorTasksTBV.swift in Sources */,
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
 				52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */,
 				521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */,
@@ -384,12 +413,15 @@
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
 				52AB25AD28B3C0E90006B7BA /* AlertDate.swift in Sources */,
 				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
+				52435BAC28B47CA70071D241 /* UIAlertControllerError.swift in Sources */,
 				52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */,
 				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
 				529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */,
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
+				52435BAE28B4852C0071D241 /* ColorTVC.swift in Sources */,
 				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
+				52435BB028B494410071D241 /* TasksOptionTBV.swift in Sources */,
 				52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */,
 				52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */,
 				52AF394928B123D8009846BA /* BaseView.swift in Sources */,

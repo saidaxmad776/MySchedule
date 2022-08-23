@@ -27,13 +27,7 @@ class OptionTVC: UITableViewCell {
     
     let nameCellLabel = UILabel(text: "", font: UIFont(name: "GillSans-Bold", size: 15), alignment: .center, color: .black)
     
-    let cellNameArray = [["Date", "Time"],
-                         ["Name", "Type", "Building", "Audience"],
-                         ["Teacher Name"],
-                         ["", ""],
-                         ["Repeat every 7 days"],
-    
-    ]
+
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -48,8 +42,8 @@ class OptionTVC: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func cellConfigure(indexPath: IndexPath) {
-        nameCellLabel.text = cellNameArray[indexPath.section][indexPath.row]
+    func cellScheduleConfigure(nameArray: [[String]],indexPath: IndexPath) {
+        nameCellLabel.text = nameArray[indexPath.section][indexPath.row]
         
         if indexPath == [3, 0] {
             backgroundViewCell.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
@@ -59,6 +53,16 @@ class OptionTVC: UITableViewCell {
             repeatSwitch.isHidden = false
         }
     }
+    
+    func cellTasksConfigure(nameAray: [String],indexPath: IndexPath) {
+        nameCellLabel.text = nameAray[indexPath.section]
+        
+        if indexPath == [3, 0] {
+            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+        }
+
+    }
+
     
     @objc private func swichChange(paramTarget: UISwitch) {
         

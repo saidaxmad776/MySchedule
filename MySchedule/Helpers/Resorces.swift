@@ -54,7 +54,7 @@ enum R {
                 switch tab {
                 case .overview: return UIImage(systemName: "calendar.badge.clock")
                 case .session: return UIImage(systemName: "text.badge.checkmark")
-                case .progress: return UIImage(systemName: "rectangle.stack.person.crop")
+                case .progress: return UIImage(systemName: "person.crop.circle.badge.plus")
                 }
             }
         }

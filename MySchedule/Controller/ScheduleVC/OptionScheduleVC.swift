@@ -12,6 +12,13 @@ class OptionScheduleVC: UITableViewController {
     let idOptionScheduleCell = "idOptionScheduleCell"
     let idOptionScheduleHeder = "idOptionScheduleHeder"
     
+    let headerNameArray = ["DATE AND TIME", "LESSON", "TEACHER", "COLOR", "PERIOD"]
+    
+    let cellNameArray = [["Date", "Time"],
+                         ["Name", "Type", "Building", "Audience"],
+                         ["Teacher Name"],
+                         ["", ""],
+                         ["Repeat every 7 days"],]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +60,7 @@ class OptionScheduleVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idOptionScheduleCell, for: indexPath) as! OptionTVC
         cell.selectionStyle = .none
-        cell.cellConfigure(indexPath: indexPath)
+        cell.cellScheduleConfigure(nameArray: cellNameArray, indexPath: indexPath)
         return cell
     }
    
@@ -63,7 +70,7 @@ class OptionScheduleVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: idOptionScheduleHeder) as! OptionHTC
-        header.headerConfigure(section: section)
+        header.headerConfigure(nameArray: headerNameArray, section: section)
         return header
     }
     
@@ -86,8 +93,14 @@ class OptionScheduleVC: UITableViewController {
         case [1,1]: alertCellName(label: cell.nameCellLabel, name: "Type lesson", placeHolder: "Enter type lesson")
         case [1,2]: alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson")
         case [1,3]: alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson")
-        
+        case [2,0]: pushController(vc: TeacherVC())
+        case [3,0]: pushController(vc: ScheduleColorVC())
         default: print("ok")
+        }
+        
+        func pushController(vc: UIViewController) {
+            let viewController = vc
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

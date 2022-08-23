@@ -105,6 +105,11 @@ extension TasksVC {
         calendar.dataSource = self
     }
     
+    @objc private func addButtonTap() {
+        let tasksOptionVC = TasksOptionTBV()
+        navigationController?.pushViewController(tasksOptionVC, animated: true)
+    }
+    
     override func layoutViews() {
         super.layoutViews()
         
@@ -131,6 +136,8 @@ extension TasksVC {
     
     override func configure() {
         super.configure()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         
         title = R.Strings.NavBar.session
         navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .session)
