@@ -9,7 +9,7 @@ import UIKit
 
 extension UIViewController {
     
-    func alertCellName(label: UILabel, name: String, placeHolder: String) {
+    func alertCellName(label: UILabel, name: String, placeHolder: String, completionHandler: @escaping (String) -> Void) {
         
         let alert = UIAlertController(title: name, message: nil, preferredStyle: .alert)
         
@@ -18,6 +18,7 @@ extension UIViewController {
             let textFieldAlert = alert.textFields?.first
             guard let text = textFieldAlert?.text else { return }
             label.text = text
+            completionHandler(text)
         }
         
         alert.addTextField { (textFieldAlert) in

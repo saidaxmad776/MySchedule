@@ -36,6 +36,8 @@ class OptionTVC: UITableViewCell {
 //        return imageView
 //    }()
     
+    weak var switchReapetDelegate: SwitchReapetProtocol?
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -78,7 +80,7 @@ class OptionTVC: UITableViewCell {
 
     
     @objc private func swichChange(paramTarget: UISwitch) {
-        
+        switchReapetDelegate?.switchReapet(value: paramTarget.isOn)
     }
     
     private func setupView() {

@@ -20,12 +20,24 @@ class OptionScheduleVC: UITableViewController {
                          ["", ""],
                          ["Repeat every 7 days"],]
     
+    private var scheduleModel = ScheduleModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Option Schedule"
         setDelegate()
         setupView()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(saveButtonTap))
+        
+    }
+    
+    @objc private func saveButtonTap() {
+        
+        RealmManager.shared.saveScheduleModel(model: scheduleModel)
+        scheduleModel = ScheduleModel()
+        tableView.reloadRows(at: [[0,0],[0,1],[1,0],[1,1],[1,2],[1,3]], with: .none)
     }
     
     
@@ -61,9 +73,10 @@ class OptionScheduleVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: idOptionScheduleCell, for: indexPath) as! OptionTVC
         cell.selectionStyle = .none
         cell.cellScheduleConfigure(nameArray: cellNameArray, indexPath: indexPath)
+        cell.switchReapetDelegate = self
         return cell
     }
-   
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 45
     }
@@ -83,16 +96,31 @@ class OptionScheduleVC: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath) as! OptionTVC
         
         switch indexPath {
-        case [0,0]: alertDate(label: cell.nameCellLabel) { (numberWeekday, date) in
-            print(numberWeekday, date)
-        }
-        case [0,1]: alertTime(label: cell.nameCellLabel) { (date) in
-            print(date)
-        }
-        case [1,0]: alertCellName(label: cell.nameCellLabel, name: "Name Lesson", placeHolder: "Enter name lesson")
-        case [1,1]: alertCellName(label: cell.nameCellLabel, name: "Type lesson", placeHolder: "Enter type lesson")
-        case [1,2]: alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson")
-        case [1,3]: alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson")
+        case [0,0]:
+            alertDate(label: cell.nameCellLabel) { [self] (numberWeekday, date) in
+                scheduleModel.scheduleDate = date
+                scheduleModel.scheduleWeekday = numberWeekday
+            }
+        case [0,1]:
+            alertTime(label: cell.nameCellLabel) { [self] (time) in
+                scheduleModel.scheduleTime = time
+            }
+        case [1,0]:
+            alertCellName(label: cell.nameCellLabel, name: "Name Lesson", placeHolder: "Enter name lesson") { text in
+                self.scheduleModel.scheduleName = text
+            }
+        case [1,1]:
+            alertCellName(label: cell.nameCellLabel, name: "Type lesson", placeHolder: "Enter type lesson") { text in
+                self.scheduleModel.scheduleType = text
+            }
+        case [1,2]:
+            alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson") { text in
+                self.scheduleModel.scheduleBuilding = text
+            }
+        case [1,3]:
+            alertCellName(label: cell.nameCellLabel, name: "Building number", placeHolder: "Enter type lesson") { text in
+                self.scheduleModel.scheduleAudience = text
+            }
         case [2,0]: pushController(vc: TeacherVC())
         case [3,0]: pushController(vc: ScheduleColorVC())
         default: print("ok")
@@ -103,4 +131,11 @@ class OptionScheduleVC: UITableViewController {
             navigationController?.pushViewController(viewController, animated: true)
         }
     }
+}
+
+extension OptionScheduleVC: SwitchReapetProtocol {
+    func switchReapet(value: Bool) {
+        scheduleModel.scheduleReapet = value
+    }
+
 }

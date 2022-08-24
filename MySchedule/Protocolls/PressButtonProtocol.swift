@@ -10,3 +10,8 @@ import UIKit
 protocol PressButtonProtocol: AnyObject {
     func readyButtonTap(indexPath: IndexPath) 
 }
+
+
+protocol SwitchReapetProtocol: AnyObject {
+    func switchReapet(value: Bool)
+}

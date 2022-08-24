@@ -74,9 +74,15 @@ class ContactsOptionTBV: UITableViewController {
         let cell = tableView.cellForRow(at: indexPath) as! OptionTVC
 
         switch indexPath.section {
-        case 0: alertCellName(label: cell.nameCellLabel, name: "Name Contact", placeHolder: "Enter Name Contact")
-        case 1: alertCellName(label: cell.nameCellLabel, name: "Phone number", placeHolder: "Enter Name Contact")
-        case 2: alertCellName(label: cell.nameCellLabel, name: "Mail", placeHolder: "Enter Name Contact")
+        case 0: alertCellName(label: cell.nameCellLabel, name: "Name Contact", placeHolder: "Enter Name Contact") { text in
+            print(text)
+        }
+        case 1: alertCellName(label: cell.nameCellLabel, name: "Phone number", placeHolder: "Enter Name Contact") { text in
+            print(text)
+        }
+        case 2: alertCellName(label: cell.nameCellLabel, name: "Mail", placeHolder: "Enter Name Contact") { text in
+            print(text)
+        }
         case 3: alertOfTeacher(label: cell.nameCellLabel) { type in
             print(type)
         }

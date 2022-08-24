@@ -74,8 +74,12 @@ class TasksOptionTBV: UITableViewController {
         switch indexPath.section {
         case 0: alertDate(label: cell.nameCellLabel) { (numberWeekday, date) in
             print(numberWeekday, date) }
-        case 1: alertCellName(label: cell.nameCellLabel, name: "Name Lesson", placeHolder: "Enter name lesson")
-        case 2: alertCellName(label: cell.nameCellLabel, name: "Type lesson", placeHolder: "Enter type lesson")
+        case 1: alertCellName(label: cell.nameCellLabel, name: "Name Lesson", placeHolder: "Enter name lesson") { text in
+            print(text)
+        }
+        case 2: alertCellName(label: cell.nameCellLabel, name: "Type lesson", placeHolder: "Enter type lesson") { text in
+            print(text)
+        }
         case 3: pushController(vc: ColorTasksTBV())
         default: print("ok")
         }
