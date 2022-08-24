@@ -9,11 +9,12 @@ import UIKit
 
 class OptionTVC: UITableViewCell {
     
-    let backgroundViewCell: UIView = {
-        let view = UIView()
-        view.backgroundColor = .systemGray2
-        view.layer.cornerRadius = 10
-        return view
+    let backgroundViewCell: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .systemGray2
+        imageView.contentMode = .scaleAspectFit
+        imageView.layer.cornerRadius = 10
+        return imageView
     }()
     
     let repeatSwitch: UISwitch = {
@@ -27,7 +28,13 @@ class OptionTVC: UITableViewCell {
     
     let nameCellLabel = UILabel(text: "", font: UIFont(name: "GillSans-Bold", size: 15), alignment: .center, color: .black)
     
-
+//    let addImageContacts: UIImageView = {
+//        let imageView = UIImageView()
+//        imageView.layer.cornerRadius = 10
+//        imageView.isHidden = true
+//        imageView.image = UIImage(systemName: "person.fill.badge.plus")
+//        return imageView
+//    }()
     
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -62,6 +69,12 @@ class OptionTVC: UITableViewCell {
         }
 
     }
+    
+    func cellContactsConfigure(nameAray: [String],indexPath: IndexPath) {
+        nameCellLabel.text = nameAray[indexPath.section]
+
+        indexPath.section == 4 ? backgroundViewCell.image = UIImage(systemName: "person.fill.badge.plus") : nil
+    }
 
     
     @objc private func swichChange(paramTarget: UISwitch) {
@@ -75,6 +88,8 @@ class OptionTVC: UITableViewCell {
         addView(backgroundViewCell)
         backgroundViewCell.addView(nameCellLabel)
         contentView.addView(repeatSwitch)
+        
+//        addView(addImageContacts)
     }
     
     private func setConstraints() {
@@ -91,6 +106,11 @@ class OptionTVC: UITableViewCell {
             
             repeatSwitch.centerYAnchor.constraint(equalTo: centerYAnchor),
             repeatSwitch.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
+            
+//            addImageContacts.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+//            addImageContacts.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+//            addImageContacts.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+//            addImageContacts.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
         ])
     }
     

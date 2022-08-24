@@ -17,7 +17,6 @@
 		529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230628B3F37200AC95A9 /* AlertTime.swift */; };
 		529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230828B3F54800AC95A9 /* AlertForCellName.swift */; };
 		529D230E28B4785800AC95A9 /* ScheduleColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230D28B4785800AC95A9 /* ScheduleColorVC.swift */; };
-		529D231028B4786C00AC95A9 /* TeacherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529D230F28B4786C00AC95A9 /* TeacherVC.swift */; };
 		52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */; };
 		52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */; };
 		52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB25A728B38BF10006B7BA /* OptionTVC.swift */; };
@@ -39,6 +38,11 @@
 		52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF394E28B1243C009846BA /* UIColor+Ext.swift */; };
 		52AF395528B1243F009846BA /* Resorces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF395428B1243F009846BA /* Resorces.swift */; };
 		52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF396828B27E51009846BA /* ScheduleTVC.swift */; };
+		52B951F928B4E72F00DDC47E /* ContactsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B951F828B4E72F00DDC47E /* ContactsTVCell.swift */; };
+		52B951FB28B5225B00DDC47E /* ContactsOptionTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B951FA28B5225B00DDC47E /* ContactsOptionTBV.swift */; };
+		52B951FD28B601AF00DDC47E /* AlertOfTeacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B951FC28B601AF00DDC47E /* AlertOfTeacher.swift */; };
+		52B951FF28B6126C00DDC47E /* AlertPhotoCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B951FE28B6126C00DDC47E /* AlertPhotoCamera.swift */; };
+		52B9520128B6357100DDC47E /* TeacherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9520028B6357100DDC47E /* TeacherVC.swift */; };
 		CF6BDF7A7D17301926B9FB3B /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +57,6 @@
 		529D230628B3F37200AC95A9 /* AlertTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTime.swift; sourceTree = "<group>"; };
 		529D230828B3F54800AC95A9 /* AlertForCellName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertForCellName.swift; sourceTree = "<group>"; };
 		529D230D28B4785800AC95A9 /* ScheduleColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleColorVC.swift; sourceTree = "<group>"; };
-		529D230F28B4786C00AC95A9 /* TeacherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherVC.swift; sourceTree = "<group>"; };
 		52AB25A328B364FC0006B7BA /* PressButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressButtonProtocol.swift; sourceTree = "<group>"; };
 		52AB25A528B3883B0006B7BA /* OptionScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionScheduleVC.swift; sourceTree = "<group>"; };
 		52AB25A728B38BF10006B7BA /* OptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTVC.swift; sourceTree = "<group>"; };
@@ -77,6 +80,11 @@
 		52AF395028B1243C009846BA /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
 		52AF395428B1243F009846BA /* Resorces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resorces.swift; sourceTree = "<group>"; };
 		52AF396828B27E51009846BA /* ScheduleTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTVC.swift; sourceTree = "<group>"; };
+		52B951F828B4E72F00DDC47E /* ContactsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTVCell.swift; sourceTree = "<group>"; };
+		52B951FA28B5225B00DDC47E /* ContactsOptionTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsOptionTBV.swift; sourceTree = "<group>"; };
+		52B951FC28B601AF00DDC47E /* AlertOfTeacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOfTeacher.swift; sourceTree = "<group>"; };
+		52B951FE28B6126C00DDC47E /* AlertPhotoCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPhotoCamera.swift; sourceTree = "<group>"; };
+		52B9520028B6357100DDC47E /* TeacherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherVC.swift; sourceTree = "<group>"; };
 		908158F2E370D4BB195448F7 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
 		B72BE24E83164EBA11348DCE /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
 		E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +143,8 @@
 				52AB25AC28B3C0E90006B7BA /* AlertDate.swift */,
 				529D230628B3F37200AC95A9 /* AlertTime.swift */,
 				529D230828B3F54800AC95A9 /* AlertForCellName.swift */,
+				52B951FC28B601AF00DDC47E /* AlertOfTeacher.swift */,
+				52B951FE28B6126C00DDC47E /* AlertPhotoCamera.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,8 +268,9 @@
 		52AF396628B1E90F009846BA /* ContactsVC */ = {
 			isa = PBXGroup;
 			children = (
-				529D230F28B4786C00AC95A9 /* TeacherVC.swift */,
+				52B951F728B4E66900DDC47E /* Views */,
 				52AF393A28B1040B009846BA /* ContactsVC.swift */,
+				52B951FA28B5225B00DDC47E /* ContactsOptionTBV.swift */,
 			);
 			path = ContactsVC;
 			sourceTree = "<group>";
@@ -268,6 +279,15 @@
 			isa = PBXGroup;
 			children = (
 				52AF396828B27E51009846BA /* ScheduleTVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52B951F728B4E66900DDC47E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52B951F828B4E72F00DDC47E /* ContactsTVCell.swift */,
+				52B9520028B6357100DDC47E /* TeacherVC.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -398,7 +418,6 @@
 				52AF393728B103CD009846BA /* ScheduleVC.swift in Sources */,
 				52AF395128B1243C009846BA /* UIView + Ext.swift in Sources */,
 				52AB25AA28B3A3640006B7BA /* OptionHTC.swift in Sources */,
-				529D231028B4786C00AC95A9 /* TeacherVC.swift in Sources */,
 				521A4F8E28B2A019006CFF61 /* UIStackView + Ext.swift in Sources */,
 				52AF395528B1243F009846BA /* Resorces.swift in Sources */,
 				529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */,
@@ -408,22 +427,27 @@
 				52435BB428B4A13C0071D241 /* ColorTasksTBV.swift in Sources */,
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,
 				52AF395328B1243C009846BA /* UIColor+Ext.swift in Sources */,
+				52B951F928B4E72F00DDC47E /* ContactsTVCell.swift in Sources */,
 				521A4F9028B3520E006CFF61 /* UILabel + Ext.swift in Sources */,
 				52AB25A628B3883B0006B7BA /* OptionScheduleVC.swift in Sources */,
 				52AF391E28B0FD8F009846BA /* AppDelegate.swift in Sources */,
 				52AB25AD28B3C0E90006B7BA /* AlertDate.swift in Sources */,
 				52AF396928B27E51009846BA /* ScheduleTVC.swift in Sources */,
 				52435BAC28B47CA70071D241 /* UIAlertControllerError.swift in Sources */,
+				52B9520128B6357100DDC47E /* TeacherVC.swift in Sources */,
 				52AB25A828B38BF10006B7BA /* OptionTVC.swift in Sources */,
 				52AF394828B123D8009846BA /* NavBarController.swift in Sources */,
+				52B951FB28B5225B00DDC47E /* ContactsOptionTBV.swift in Sources */,
 				529D230928B3F54800AC95A9 /* AlertForCellName.swift in Sources */,
 				52AF394728B123D8009846BA /* TabBarController.swift in Sources */,
 				52435BAE28B4852C0071D241 /* ColorTVC.swift in Sources */,
+				52B951FD28B601AF00DDC47E /* AlertOfTeacher.swift in Sources */,
 				521A4F9328B35B86006CFF61 /* TasksTVC.swift in Sources */,
 				52AF392028B0FD8F009846BA /* SceneDelegate.swift in Sources */,
 				52435BB028B494410071D241 /* TasksOptionTBV.swift in Sources */,
 				52AB25A428B364FC0006B7BA /* PressButtonProtocol.swift in Sources */,
 				52AF393B28B1040B009846BA /* ContactsVC.swift in Sources */,
+				52B951FF28B6126C00DDC47E /* AlertPhotoCamera.swift in Sources */,
 				52AF394928B123D8009846BA /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

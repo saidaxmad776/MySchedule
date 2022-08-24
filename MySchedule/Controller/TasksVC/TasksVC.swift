@@ -137,6 +137,7 @@ extension TasksVC {
     override func configure() {
         super.configure()
         
+        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTap))
         
         title = R.Strings.NavBar.session

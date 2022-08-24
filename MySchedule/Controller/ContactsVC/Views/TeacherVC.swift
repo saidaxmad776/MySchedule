@@ -10,8 +10,5 @@ import UIKit
 class TeacherVC: UIViewController {
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+    
 }
