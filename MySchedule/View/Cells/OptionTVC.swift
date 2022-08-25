@@ -21,7 +21,6 @@ class OptionTVC: UITableViewCell {
         let swich = UISwitch()
         swich.isOn = true
         swich.isHidden = true
-        swich.onTintColor = .red
         swich.addTarget(self, action: #selector(swichChange(paramTarget:)), for: .valueChanged)
         return swich
     }()
@@ -51,25 +50,19 @@ class OptionTVC: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func cellScheduleConfigure(nameArray: [[String]],indexPath: IndexPath) {
+    func cellScheduleConfigure(nameArray: [[String]],indexPath: IndexPath, hexColor: String) {
         nameCellLabel.text = nameArray[indexPath.section][indexPath.row]
         
-        if indexPath == [3, 0] {
-            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
-        }
+        let color = UIColor().colorFromHex(hexColor)
+        backgroundViewCell.backgroundColor = (indexPath.section == 3 ? color : .white)
         
-        if indexPath == [4, 0] {
-            repeatSwitch.isHidden = false
-        }
+        repeatSwitch.isHidden = (indexPath.section == 4 ? false : true)
+        repeatSwitch.onTintColor = color
     }
     
     func cellTasksConfigure(nameAray: [String],indexPath: IndexPath) {
         nameCellLabel.text = nameAray[indexPath.section]
-        
-        if indexPath == [3, 0] {
-            backgroundViewCell.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
-        }
-
+        backgroundViewCell.backgroundColor = (indexPath.section == 3 ? UIColor(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1) : .white)
     }
     
     func cellContactsConfigure(nameAray: [String],indexPath: IndexPath) {

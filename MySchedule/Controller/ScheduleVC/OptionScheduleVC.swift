@@ -22,6 +22,8 @@ class OptionScheduleVC: UITableViewController {
     
     private var scheduleModel = ScheduleModel()
     
+    var hexColorCell = "FFFFFF"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,10 +36,14 @@ class OptionScheduleVC: UITableViewController {
     }
     
     @objc private func saveButtonTap() {
-        
+        scheduleModel.scheduleColor = hexColorCell
         RealmManager.shared.saveScheduleModel(model: scheduleModel)
         scheduleModel = ScheduleModel()
-        tableView.reloadRows(at: [[0,0],[0,1],[1,0],[1,1],[1,2],[1,3]], with: .none)
+        alertOk(title: "Success")
+        hexColorCell = "FFFFFF"
+//        tableView.reloadRows(at: [[0,0],[0,1],[1,0],[1,1],[1,2],[1,3],[2,0]], with: .none)
+        tableView.reloadData()
+        
     }
     
     
@@ -72,7 +78,7 @@ class OptionScheduleVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idOptionScheduleCell, for: indexPath) as! OptionTVC
         cell.selectionStyle = .none
-        cell.cellScheduleConfigure(nameArray: cellNameArray, indexPath: indexPath)
+        cell.cellScheduleConfigure(nameArray: cellNameArray, indexPath: indexPath, hexColor: hexColorCell)
         cell.switchReapetDelegate = self
         return cell
     }

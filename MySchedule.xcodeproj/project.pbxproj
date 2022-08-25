@@ -45,6 +45,7 @@
 		52B9520128B6357100DDC47E /* TeacherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9520028B6357100DDC47E /* TeacherVC.swift */; };
 		52B9520428B6548100DDC47E /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9520328B6548100DDC47E /* ScheduleModel.swift */; };
 		52B9520728B6562100DDC47E /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9520628B6562100DDC47E /* RealmManager.swift */; };
+		52B9520928B7480C00DDC47E /* AlertOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9520828B7480B00DDC47E /* AlertOk.swift */; };
 		CF6BDF7A7D17301926B9FB3B /* Pods_MySchedule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		52B9520028B6357100DDC47E /* TeacherVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherVC.swift; sourceTree = "<group>"; };
 		52B9520328B6548100DDC47E /* ScheduleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
 		52B9520628B6562100DDC47E /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		52B9520828B7480B00DDC47E /* AlertOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOk.swift; sourceTree = "<group>"; };
 		908158F2E370D4BB195448F7 /* Pods-MySchedule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.debug.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.debug.xcconfig"; sourceTree = "<group>"; };
 		B72BE24E83164EBA11348DCE /* Pods-MySchedule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySchedule.release.xcconfig"; path = "Target Support Files/Pods-MySchedule/Pods-MySchedule.release.xcconfig"; sourceTree = "<group>"; };
 		E79D04F4B571BE98798749C0 /* Pods_MySchedule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySchedule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				529D230828B3F54800AC95A9 /* AlertForCellName.swift */,
 				52B951FC28B601AF00DDC47E /* AlertOfTeacher.swift */,
 				52B951FE28B6126C00DDC47E /* AlertPhotoCamera.swift */,
+				52B9520828B7480B00DDC47E /* AlertOk.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				529D230728B3F37200AC95A9 /* AlertTime.swift in Sources */,
 				52AF394A28B123D8009846BA /* BaseController.swift in Sources */,
 				52AF395228B1243C009846BA /* Date + Ext.swift in Sources */,
+				52B9520928B7480C00DDC47E /* AlertOk.swift in Sources */,
 				529D230E28B4785800AC95A9 /* ScheduleColorVC.swift in Sources */,
 				52435BB428B4A13C0071D241 /* ColorTasksTBV.swift in Sources */,
 				52AF393928B103FA009846BA /* TasksVC.swift in Sources */,

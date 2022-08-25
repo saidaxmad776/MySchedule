@@ -7,6 +7,7 @@
 
 import UIKit
 import FSCalendar
+import RealmSwift
 
 class ScheduleVC: BaseController {
     
@@ -42,9 +43,11 @@ class ScheduleVC: BaseController {
         return tableView
     }()
     
+    let localRealm = try! Realm()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+                
         swipeAction()
     }
     
@@ -153,7 +156,16 @@ extension ScheduleVC: FSCalendarDataSource, FSCalendarDelegate {
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        print(date)
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.weekday], from: date)
+        guard let weekday = components.weekday else { return }
+        print(weekday)
+        
+        let predicatRepeat = NSPredicate(format: "scheduleWeekday = \(weekday) AND scheduleReapet = true")
+        
+        var scheduleArray: Results<ScheduleModel>
+        scheduleArray = localRealm.objects(ScheduleModel.self).filter(predicatRepeat)
+        print(scheduleArray)
     }
 }
 
